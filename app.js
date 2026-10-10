@@ -1,3 +1,5 @@
+// usar a rota "http://localhost:3001/amostra" no thunder client
+
 import express from "express";
 
 import amostraRoutes from "./routes/amostraRoutes.js";
