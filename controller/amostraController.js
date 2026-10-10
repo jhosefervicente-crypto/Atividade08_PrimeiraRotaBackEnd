@@ -58,7 +58,7 @@ export function excluirAmostra(req, res) {
 export function atualizarAmostra(req, res) {
     const indice = Number(req.params.indice);
 
-    const amostra = buscarPorIndice(id);
+    const amostra = buscarPorIndice(indice);
 
     if(!amostra) {
         return res.status(404).json({
