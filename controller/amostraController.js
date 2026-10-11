@@ -7,6 +7,7 @@ import {
     atualizar
 } from "../repository/amostraRepository.js";
 
+
 export function listarAmostras(req, res) {
     const amostras = listar();
     
@@ -85,6 +86,5 @@ export function atualizarAmostra(req, res) {
     };
 
     atualizar(indice, amostra);
-
     return res.status(200).json (amostra);
 };
